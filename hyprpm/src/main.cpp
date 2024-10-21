@@ -54,7 +54,7 @@ int                        main(int argc, char** argv, char** envp) {
             } else if (ARGS[i] == "--notify" || ARGS[i] == "-n") {
                 notify = true;
             } else if (ARGS[i] == "--notify-fail" || ARGS[i] == "-nn") {
-                notifyFail = true;
+                notifyFail = notify = true;
             } else if (ARGS[i] == "--verbose" || ARGS[i] == "-v") {
                 verbose = true;
             } else if (ARGS[i] == "--no-shallow" || ARGS[i] == "-s") {
