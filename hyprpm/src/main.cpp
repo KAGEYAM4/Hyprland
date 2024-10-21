@@ -116,7 +116,7 @@ int                        main(int argc, char** argv, char** envp) {
 
             if (ret2 != LOADSTATE_OK)
                 return 1;
-        } else if (notify || notifyFail)
+        } else if (notify)
             g_pPluginManager->notify(ICON_ERROR, 0, 10000, "[hyprpm] Couldn't update headers");
     } else if (command[0] == "enable") {
         if (ARGS.size() < 2) {
