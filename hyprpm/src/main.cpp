@@ -23,8 +23,8 @@ constexpr std::string_view HELP = R"#(┏ hyprpm, a Hyprland Plugin Manager
 ┃
 ┣ Flags:
 ┃
-┣ --notify       | -n    → Send a hyprland notification for important events (e.g. load fail)
-┣ --notify-fail  | -nn   → Send a hyprland notification for fail events
+┣ --notify       | -n    → Send a hyprland notification for important events (including both successes and fail events)
+┣ --notify-fail  | -nn   → Send a hyprland notification for fail events only
 ┣ --help         | -h    → Show this menu
 ┣ --verbose      | -v    → Enable too much logging
 ┣ --force        | -f    → Force an operation ignoring checks (e.g. update -f)
