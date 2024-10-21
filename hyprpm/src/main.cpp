@@ -149,7 +149,7 @@ int                        main(int argc, char** argv, char** envp) {
     } else if (command[0] == "reload") {
         auto ret = g_pPluginManager->ensurePluginsLoadState();
 
-        if (ret != LOADSTATE_OK && (notify || notifyFail)) {
+        if (ret != LOADSTATE_OK && notify) {
             switch (ret) {
                 case LOADSTATE_FAIL:
                 case LOADSTATE_PARTIAL_FAIL: g_pPluginManager->notify(ICON_ERROR, 0, 10000, "[hyprpm] Failed to load plugins"); break;
